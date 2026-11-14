@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: peyk-db
+    restart: unless-stopped
+    ports:
+      - "${DB_PORT}:5432"
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    volumes:
+      - peyk_pgdata:/var/lib/postgresql/data
+
+volumes:
+  peyk_pgdata:
