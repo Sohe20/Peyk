@@ -6,7 +6,7 @@ import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
   {
-    ignores: ['eslint.config.mjs'],
+    ignores: ['eslint.config.mjs','test-socket.js'],
   },
   eslint.configs.recommended,
   ...tseslint.configs.recommendedTypeChecked,
@@ -31,7 +31,9 @@ export default tseslint.config(
       '@typescript-eslint/no-floating-promises': 'warn',
       '@typescript-eslint/no-unsafe-argument': 'off',
       "prettier/prettier": ["off", { endOfLine: "auto" }],
-      "@typescript-eslint/no-unsafe-call":"off"
+      "@typescript-eslint/no-unsafe-call":"off",
+      "@typescript-eslint/no-unsafe-member-access":"off",
+      "@typescript-eslint/no-misused-promises":"off"
      
     },
   },
