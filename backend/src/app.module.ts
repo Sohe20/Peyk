@@ -7,6 +7,8 @@ import { HealthModule } from './health/health.module';
 import { UsersModule } from './users/users.module';
 import { AuthModule } from './auth/auth.module';
 import { ChatModule } from './chat/chat.module';
+import { RoomsModule } from './rooms/rooms.module';
+import { MessagesModule } from './messages/messages.module';
 
 @Module({
   imports: [
@@ -31,6 +33,8 @@ import { ChatModule } from './chat/chat.module';
      UsersModule,
      AuthModule,
      ChatModule,
+     RoomsModule,
+     MessagesModule,
   ],
   controllers: [AppController],
   providers: [AppService],
