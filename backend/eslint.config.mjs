@@ -6,7 +6,7 @@ import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
   {
-    ignores: ['eslint.config.mjs','test-socket.js'],
+    ignores: ['eslint.config.mjs','test-chat.js'],
   },
   eslint.configs.recommended,
   ...tseslint.configs.recommendedTypeChecked,

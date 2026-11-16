@@ -11,6 +11,8 @@ dist/
 *.log
 npm-debug.log*
 
+test-chat.js
+
 # OS / editor
 .DS_Store
 Thumbs.db
